@@ -33,7 +33,38 @@ body {
   background: rgba(136, 212, 152, 0.25);
   z-index: 1;
 
+  li {
+    > a {
+      &:hover, &:focus {
+        background: none;
+        text-decoration: underline;
+      }
+    }
+
+    &.active {
+      a {
+        font-weight: 700;
+      }
+    }
+  }
+
   a {
     color: #fff;
+  }
+
+  .open {
+    > a, a:hover, a:focus {
+      background-color: transparent;
+      border-color: transparent;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: rgba(136, 212, 152, 0.25);
+    > li {
+      > a {
+        color: #fff;
+      }
+    }
   }
 }

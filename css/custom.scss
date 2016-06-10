@@ -1,6 +1,10 @@
 @import "variables";
 @import "mixins";
 
+body {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
 #main-header {
   height: 900px;
 
@@ -17,6 +21,11 @@
     background: url('../images/header-bg.png') top center;
     opacity: 0.5;
     z-index: 0;
+  }
+
+  .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
   }
 }
 
